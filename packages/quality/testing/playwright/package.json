@@ -67,7 +67,7 @@
   "devDependencies": {
     "@anthropic-ai/sdk": "0.91.1",
     "@axe-core/playwright": "^4.13.0",
-    "@currents/playwright": "catalog:e2e",
+    "@currents/playwright": "file:./currents-playwright-2.7.0-main.a8fce8a7.tgz",
     "@n8n/eslint-config": "workspace:*",
     "@n8n/oxlint-config": "workspace:*",
     "@types/debug": "^4.1.12",
