@@ -2,7 +2,7 @@ import type { CurrentsConfig } from '@currents/playwright';
 
 const config: CurrentsConfig = {
 	projectId: process.env.CURRENTS_PROJECT_ID ?? 'nHHLA5',
-	consoleOutput: 'detailed',
+	consoleOutput: 'compact',
 	outputFile: 'currents-report.json',
 	// Coverage is collected via browser-native V8 (fixtures/v8-coverage.ts +
 	// monocart-coverage-reports), not Currents' istanbul fixture.

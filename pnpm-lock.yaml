@@ -789,9 +789,6 @@ catalogs:
       specifier: 3.23.3
       version: 3.23.3
   e2e:
-    '@currents/playwright':
-      specifier: 2.6.0
-      version: 2.6.0
     '@playwright/cli':
       specifier: 0.1.0
       version: 0.1.0
@@ -8704,8 +8701,8 @@ importers:
         specifier: ^4.13.0
         version: 4.13.0(playwright-core@1.62.1)
       '@currents/playwright':
-        specifier: catalog:e2e
-        version: 2.6.0(bufferutil@4.0.9)(supports-color@8.1.1)(utf-8-validate@5.0.10)
+        specifier: file:./currents-playwright-2.7.0-main.a8fce8a7.tgz
+        version: file:packages/quality/testing/playwright/currents-playwright-2.7.0-main.a8fce8a7.tgz(bufferutil@4.0.9)(supports-color@8.1.1)(utf-8-validate@5.0.10)
       '@memlab/api':
         specifier: 2.0.0
         version: 2.0.0(bufferutil@4.0.9)(supports-color@8.1.1)(typescript@7.0.2)(utf-8-validate@5.0.10)
@@ -10339,9 +10336,10 @@ packages:
     resolution: {integrity: sha512-JHoejIiLoh0nkqyBTUydTilV9WHNBlWRNu9XoTmlyBcu/Aamdh0YCr7ORTLF9zggvQbCQstG9sCspSfj2yJGTw==}
     engines: {node: '>=8'}
 
-  '@currents/playwright@2.6.0':
-    resolution: {integrity: sha512-J1FDC6HJXI55V/TuGGVM8IS+cxQObEWr8p/6CRnIeXpcL+5nZcZ/o5jrhgMeQJqKXBvMCJeCqXPJAnjqIn2f8A==}
-    engines: {node: '>=18.17'}
+  '@currents/playwright@file:packages/quality/testing/playwright/currents-playwright-2.7.0-main.a8fce8a7.tgz':
+    resolution: {integrity: sha512-smEOfEE9YBcDLZBOX+2wLqdlz/TSKV7br/GJwX+DjPdizRAw13TgEY/kMxvSvXxsuGGUOA0I71EBcN0hcMnpAQ==, tarball: file:packages/quality/testing/playwright/currents-playwright-2.7.0-main.a8fce8a7.tgz}
+    version: 2.7.0-main.a8fce8a7
+    engines: {node: '>=20.18.1'}
     hasBin: true
 
   '@currents/rules@0.1.0':
@@ -28198,7 +28196,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@currents/playwright@2.6.0(bufferutil@4.0.9)(supports-color@8.1.1)(utf-8-validate@5.0.10)':
+  '@currents/playwright@file:packages/quality/testing/playwright/currents-playwright-2.7.0-main.a8fce8a7.tgz(bufferutil@4.0.9)(supports-color@8.1.1)(utf-8-validate@5.0.10)':
     dependencies:
       '@babel/code-frame': 7.29.7
       '@commander-js/extra-typings': 13.1.0(commander@13.1.0)
@@ -28217,7 +28215,7 @@ snapshots:
       json-stringify-safe: 5.0.1
       lil-http-terminator: 1.2.3
       lodash: 4.18.1(patch_hash=81ead1b07fc8efda87bd2724dbd876ab49f4a0aa03f96c3770060b2ea47d9e0b)
-      nanoid: 3.3.18
+      nanoid: 3.3.20
       p-debounce: 2.1.0
       p-map: 4.0.0
       p-queue: 6.6.2
@@ -28231,7 +28229,7 @@ snapshots:
       tmp: 0.2.7
       tmp-promise: 3.0.3
       ts-pattern: 5.9.2
-      undici: 6.29.0
+      undici: 7.29.1
       ws: 8.21.1(bufferutil@4.0.9)(utf-8-validate@5.0.10)
     transitivePeerDependencies:
       - bufferutil
@@ -39083,7 +39081,8 @@ snapshots:
       jest-get-type: 29.6.3
       pretty-format: 29.7.0
 
-  jiti@2.6.1: {}
+  jiti@2.6.1:
+    optional: true
 
   jiti@2.7.0: {}
 
